@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <!--Palette-->
+    <color name="primary_red">#830C0C</color>
+    <color name="dark_red">#630C0C</color>
+    <color name="accent_red">#A30C0C</color>
+    <color name="light_red">#F3CFCF</color>
+    <color name="black87">#DE000000</color>
+    <color name="black54">#8A000000</color>
+    <color name="black30">#4D000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white87">#DEFFFFFF</color>
+    <color name="white54">#8AFFFFFF</color>
+
+
+    <!--Colours-->
+    <color name="primary">@color/primary_red</color>
+    <color name="primary_dark">@color/dark_red</color>
+    <color name="accent">@color/accent_red</color>
+    <color name="accent_inverse">@color/white</color>
+    <color name="text_primary">@color/black87</color>
+    <color name="text_secondary">@color/black54</color>
+    <color name="text_primary_inverse">@color/white</color>
+    <color name="text_secondary_inverse">@color/white54</color>
+    <color name="darkener">@color/black30</color>
+    <color name="light_accent">@color/light_red</color>
 </resources>

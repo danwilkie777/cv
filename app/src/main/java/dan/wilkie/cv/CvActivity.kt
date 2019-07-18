@@ -33,5 +33,5 @@ class CvActivity : AppCompatActivity(), CvPresenter.View {
         Toast.makeText(this, "Something went wrong!", LENGTH_LONG).show()
     }
 
-    // TODO DI, recyclers, logos, styles, UI tests, DI
+    // TODO DI, recyclers, logos, styles, UI tests, DI, app icon, remove unused resources etc
 }

@@ -1,11 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:theme">@style/AppTheme.ActionBarOverlay</item>
+        <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
     </style>
+
+    <style name="ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="ProgressBar.Small">
+        <item name="android:layout_width">@dimen/grid_4x</item>
+        <item name="android:layout_height">@dimen/grid_4x</item>
+    </style>
+
+    <style name="ListRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <style name="ImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ImageView.FullWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="Avatar">
+        <item name="android:layout_width">@dimen/grid_5x</item>
+        <item name="android:layout_height">@dimen/grid_5x</item>
+    </style>
+
+    <style name="Avatar.List">
+        <item name="android:layout_marginLeft">@dimen/keyline</item>
+        <item name="android:layout_marginRight">@dimen/keyline</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Avatar.Drawer">
+        <item name="android:layout_width">@dimen/grid_8x</item>
+        <item name="android:layout_height">@dimen/grid_8x</item>
+    </style>
+
+    <style name="ListContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/keyline</item>
+        <item name="android:paddingRight">@dimen/keyline</item>
+        <item name="android:paddingTop">@dimen/grid_1x</item>
+        <item name="android:paddingBottom">@dimen/grid_1x</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="ListContent.Avatar">
+        <item name="android:paddingLeft">@dimen/keyline_content</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView.SingleLine">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextView.TwoLines">
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+    <style name="EditText.SingleLine">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/Text.Button</item>
+        <item name="backgroundTint">?colorAccent</item>
+    </style>
+
+    <style name="Text" />
+
+    <style name="Text.Display2" parent="TextAppearance.AppCompat.Display2" />
+
+    <style name="Text.Display1" parent="TextAppearance.AppCompat.Display1" />
+
+    <style name="Text.Headline" parent="TextAppearance.AppCompat.Headline" />
+
+    <style name="Text.Title" parent="TextAppearance.AppCompat.Title" />
+
+    <style name="Text.Subheading" parent="TextAppearance.AppCompat.Subhead" />
+
+    <style name="Text.Body2" parent="TextAppearance.AppCompat.Body2" />
+
+    <style name="Text.Body1" parent="TextAppearance.AppCompat.Body1" />
+
+    <style name="Text.Caption" parent="TextAppearance.AppCompat.Caption" />
+
+    <style name="Text.Button" parent="TextAppearance.AppCompat.Widget.Button.Colored" />
 
 </resources>
