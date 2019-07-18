@@ -1,0 +1,28 @@
+{
+  "profile": "profile",
+  "skills": [
+    "skill1",
+    "skill2"
+  ],
+  "education": [
+    {
+      "institution": "institution1",
+      "period": "period1",
+      "summary": "summary1"
+    },
+    {
+      "institution": "institution2",
+      "period": "period2",
+      "summary": "summary2"
+    }
+  ],
+  "work": [
+    {
+      "company": "company",
+      "role": "role",
+      "logoUrl": "logoUrl",
+      "period": "period",
+      "summary": "summary"
+    }
+  ]
+}
