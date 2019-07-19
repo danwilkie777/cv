@@ -22,6 +22,7 @@ class RetrofitCvServiceTest {
     }
 
     private fun expectedResponse() = Cv(
+        "name",
         "profile",
         listOf("skill1", "skill2"),
         listOf(

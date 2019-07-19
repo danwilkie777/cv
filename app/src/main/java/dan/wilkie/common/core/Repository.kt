@@ -1,5 +1,6 @@
 package dan.wilkie.common.core
 
+import android.util.Log
 import io.reactivex.Observable
 import io.reactivex.Single
 import io.reactivex.subjects.BehaviorSubject
@@ -17,6 +18,7 @@ open class Repository<T>(requestFunction: () -> Single<T>) {
                 .doOnSuccess { loading.onNext(false) }
                 .doOnError { loading.onNext(false) }
                 .doOnError { errors.onNext(it) }
+                .doOnError { Log.e("Repository", "Request failed", it) }
                 .toMaybe()
                 .onErrorComplete()
         }

@@ -3,6 +3,7 @@ package dan.wilkie.cv.network
 /** These objects match the API's representation of the data and are used for Gson mapping **/
 
 data class GsonCv(
+    val name: String,
     val profile: String,
     val skills: List<String>,
     val education: List<GsonEducationItem>,

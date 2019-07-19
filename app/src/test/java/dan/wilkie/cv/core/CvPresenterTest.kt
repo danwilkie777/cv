@@ -19,8 +19,8 @@ class CvPresenterTest {
     private val view = mock<CvPresenter.View>()
     private val view2 = mock<CvPresenter.View>()
     private val inOrder: InOrder = Mockito.inOrder(view, view2)
-    private val cv = Cv("profile", emptyList(), emptyList(), emptyList())
-    private val cv2 = Cv("profile2", emptyList(), emptyList(), emptyList())
+    private val cv = Cv("name","profile", emptyList(), emptyList(), emptyList())
+    private val cv2 = Cv("name2","profile2", emptyList(), emptyList(), emptyList())
     private val throwable: Throwable = Throwable()
     private val refreshSubject = PublishSubject.create<Unit>()
 

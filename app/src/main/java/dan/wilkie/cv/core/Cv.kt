@@ -4,6 +4,7 @@ package dan.wilkie.cv.core
  * exactly, though in real-life applications this would be less likely */
 
 data class Cv(
+    val name: String,
     val profile: String,
     val skills: List<String>,
     val education: List<EducationItem>,

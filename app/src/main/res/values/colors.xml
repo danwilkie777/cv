@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Palette-->
-    <color name="primary_red">#830C0C</color>
-    <color name="dark_red">#630C0C</color>
-    <color name="accent_red">#A30C0C</color>
-    <color name="light_red">#F3CFCF</color>
+    <color name="primary_green">#00e676</color>
+    <color name="dark_green">#00b248</color>
+    <color name="accent_yellow">#ffee58</color>
+    <color name="light_green">#66ffa6</color>
     <color name="black87">#DE000000</color>
     <color name="black54">#8A000000</color>
     <color name="black30">#4D000000</color>
@@ -14,14 +14,13 @@
 
 
     <!--Colours-->
-    <color name="primary">@color/primary_red</color>
-    <color name="primary_dark">@color/dark_red</color>
-    <color name="accent">@color/accent_red</color>
+    <color name="primary">@color/primary_green</color>
+    <color name="primary_dark">@color/dark_green</color>
+    <color name="accent">@color/accent_yellow</color>
     <color name="accent_inverse">@color/white</color>
     <color name="text_primary">@color/black87</color>
     <color name="text_secondary">@color/black54</color>
     <color name="text_primary_inverse">@color/white</color>
     <color name="text_secondary_inverse">@color/white54</color>
     <color name="darkener">@color/black30</color>
-    <color name="light_accent">@color/light_red</color>
 </resources>

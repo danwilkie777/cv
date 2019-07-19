@@ -2,8 +2,9 @@ package dan.wilkie.cv.core
 
 import dan.wilkie.common.core.Presenter
 import io.reactivex.Observable
+import javax.inject.Inject
 
-class CvPresenter(private val cvRepository: CvRepository) : Presenter<CvPresenter.View>() {
+class CvPresenter @Inject constructor(private val cvRepository: CvRepository) : Presenter<CvPresenter.View>() {
 
     override fun onAttach(view: View) {
         view.onRefresh().subscribeUntilDetach { cvRepository.refresh() }
