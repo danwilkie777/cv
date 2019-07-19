@@ -7,17 +7,6 @@
         <item name="colorAccent">@color/accent</item>
         <item name="android:textColorPrimary">@color/text_primary</item>
         <item name="android:textColorSecondary">@color/text_secondary</item>
-        <item name="android:textColorPrimaryInverse">@color/text_primary_inverse</item>
-        <item name="android:textColorSecondaryInverse">@color/text_secondary_inverse</item>
-    </style>
-
-    <style name="AppTheme.Inverse">
-        <item name="android:textColorPrimary">@color/text_primary_inverse</item>
-        <item name="android:textColorSecondary">@color/text_secondary_inverse</item>
-        <item name="android:textColorPrimaryInverse">@color/text_primary</item>
-        <item name="android:textColorSecondaryInverse">@color/text_secondary</item>
-        <item name="android:textColorHint">@color/text_secondary_inverse</item>
-        <item name="colorAccent">@color/accent_inverse</item>
     </style>
 
     <style name="AppTheme.ActionBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

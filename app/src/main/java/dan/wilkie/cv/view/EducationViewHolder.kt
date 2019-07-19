@@ -5,15 +5,13 @@ import android.widget.TextView
 import dan.wilkie.common.view.DataAdapter
 import dan.wilkie.cv.R
 import dan.wilkie.cv.core.EducationItem
+import kotlinx.android.synthetic.main.item_education.view.*
 
 class EducationViewHolder(itemView: View) : DataAdapter.DataViewHolder<EducationItem>(itemView) {
-    val institution = itemView.findViewById<TextView>(R.id.institution)
-    val period = itemView.findViewById<TextView>(R.id.period)
-    val summary = itemView.findViewById<TextView>(R.id.summary)
 
     override fun bind(data: EducationItem) {
-        institution.text = data.institution
-        period.text = data.period
-        summary.text = data.summary
+        itemView.institution.text = data.institution
+        itemView.period.text = data.period
+        itemView.summary.text = data.summary
     }
 }

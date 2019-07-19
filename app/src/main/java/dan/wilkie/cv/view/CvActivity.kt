@@ -73,6 +73,4 @@ class CvActivity : ScopeActivity<CvComponent>(), CvPresenter.View {
     override fun showError() {
         Toast.makeText(this, "Something went wrong!", LENGTH_LONG).show()
     }
-
-    // TODO logos, UI tests, app icon, unused resources
 }

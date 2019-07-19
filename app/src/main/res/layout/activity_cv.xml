@@ -37,9 +37,11 @@
                         tools:text="Summary" />
 
                     <TextView
-                        style="@style/ListContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/grid_2x"
                         android:text="@string/skills"
-                        android:textAppearance="@style/Text.Headline" />
+                        android:textAppearance="@style/Text.Body1" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/skills"
@@ -50,9 +52,11 @@
                         app:spanCount="3" />
 
                     <TextView
-                        style="@style/ListContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/grid_2x"
                         android:text="@string/education"
-                        android:textAppearance="@style/Text.Headline" />
+                        android:textAppearance="@style/Text.Body1" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/education"
@@ -62,9 +66,11 @@
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
                     <TextView
-                        style="@style/ListContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/grid_2x"
                         android:text="@string/work_experience"
-                        android:textAppearance="@style/Text.Headline" />
+                        android:textAppearance="@style/Text.Body1" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/work"

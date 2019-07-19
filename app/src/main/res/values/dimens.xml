@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="grid_0.5x">4dp</dimen>
     <dimen name="grid_1x">8dp</dimen>
-    <dimen name="grid_1.5x">12dp</dimen>
     <dimen name="grid_2x">16dp</dimen>
-    <dimen name="grid_3x">24dp</dimen>
-    <dimen name="grid_4x">32dp</dimen>
-    <dimen name="grid_5x">40dp</dimen>
     <dimen name="grid_6x">48dp</dimen>
-    <dimen name="grid_7x">56dp</dimen>
-    <dimen name="grid_8x">64dp</dimen>
-    <dimen name="grid_9x">72dp</dimen>
-    <dimen name="grid_10x">80dp</dimen>
-    <dimen name="grid_11x">88dp</dimen>
-    <dimen name="grid_12x">96dp</dimen>
-    <dimen name="grid_13x">104dp</dimen>
-    <dimen name="grid_14x">112dp</dimen>
-    <dimen name="grid_15x">120dp</dimen>
-    <dimen name="grid_16x">128dp</dimen>
-    <dimen name="grid_17x">136dp</dimen>
-    <dimen name="grid_18x">144dp</dimen>
-    <dimen name="grid_19x">152dp</dimen>
-    <dimen name="grid_20x">160dp</dimen>
-    <dimen name="grid_60x">480dp</dimen>
-    <dimen name="keyline">16dp</dimen>
-    <dimen name="keyline_content">72dp</dimen>
-    <dimen name="elevation_toolbar">4dp</dimen>
-    <dimen name="bar_height">@dimen/grid_6x</dimen>
 </resources>

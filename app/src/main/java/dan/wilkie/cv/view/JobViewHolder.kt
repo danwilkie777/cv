@@ -7,19 +7,15 @@ import dan.wilkie.common.view.DataAdapter
 import dan.wilkie.common.view.ImageLoader
 import dan.wilkie.cv.R
 import dan.wilkie.cv.core.Job
+import kotlinx.android.synthetic.main.item_job.view.*
 
 class JobViewHolder(itemView: View) : DataAdapter.DataViewHolder<Job>(itemView) {
-    val company = itemView.findViewById<TextView>(R.id.company)
-    val period = itemView.findViewById<TextView>(R.id.period)
-    val role = itemView.findViewById<TextView>(R.id.role)
-    val summary = itemView.findViewById<TextView>(R.id.summary)
-    val logo = itemView.findViewById<ImageView>(R.id.logo)
 
     override fun bind(data: Job) {
-        company.text = data.company
-        period.text = data.period
-        role.text = data.role
-        summary.text = data.summary
-        ImageLoader.loadImage(data.logoUrl, logo)
+        itemView.company.text = data.company
+        itemView.period.text = data.period
+        itemView.role.text = data.role
+        itemView.summary.text = data.summary
+        ImageLoader.loadImage(data.logoUrl, itemView.logo)
     }
 }
