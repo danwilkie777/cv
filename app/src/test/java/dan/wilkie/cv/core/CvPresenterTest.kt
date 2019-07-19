@@ -37,8 +37,8 @@ class CvPresenterTest {
         presenter.attach(view)
 
         verify(view).showLoading(true)
-        verify(view).showLoading(false)
         verify(view).showCv(cv)
+        verify(view).showLoading(false)
     }
 
     @Test
@@ -61,11 +61,11 @@ class CvPresenterTest {
 
         verify(cvService, times(2)).getCv()
         inOrder.verify(view).showLoading(true)
-        inOrder.verify(view).showLoading(false)
         inOrder.verify(view).showCv(cv)
-        inOrder.verify(view).showLoading(true)
         inOrder.verify(view).showLoading(false)
+        inOrder.verify(view).showLoading(true)
         inOrder.verify(view).showCv(cv2)
+        inOrder.verify(view).showLoading(false)
     }
 
     @Test

@@ -15,7 +15,7 @@ open class Repository<T>(requestFunction: () -> Single<T>) {
         .flatMapMaybe {
             requestFunction()
                 .doOnSubscribe { loading.onNext(true) }
-                .doOnSuccess { loading.onNext(false) }
+                .doAfterSuccess { loading.onNext(false) }
                 .doOnError { loading.onNext(false) }
                 .doOnError { errors.onNext(it) }
                 .doOnError { Log.e("Repository", "Request failed", it) }
