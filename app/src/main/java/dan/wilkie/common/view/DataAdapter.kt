@@ -31,10 +31,6 @@ class DataAdapter<T, VH : DataAdapter.DataViewHolder<T>>(
         holder.bind(this.getItem(position))
     }
 
-    interface HolderCreator<T, VH : DataAdapter.DataViewHolder<*>> {
-        fun create(var1: View): VH
-    }
-
     abstract class DataViewHolder<T>(itemView: View) : RecyclerView.ViewHolder(itemView) {
         abstract fun bind(data: T)
     }
