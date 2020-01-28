@@ -23,9 +23,9 @@ class CvActivity : ScopeActivity<CvComponent>(), CvPresenter.View {
     @Inject
     lateinit var presenter: CvPresenter
 
-    val skillAdapter = DataAdapter(R.layout.item_skill) { view -> SkillViewHolder(view) }
-    val educationAdapter = DataAdapter(R.layout.item_education) { view -> EducationViewHolder(view) }
-    val jobAdapter = DataAdapter(R.layout.item_job) { view -> JobViewHolder(view) }
+    private val skillAdapter = DataAdapter(R.layout.item_skill) { view -> SkillViewHolder(view) }
+    private val educationAdapter = DataAdapter(R.layout.item_education) { view -> EducationViewHolder(view) }
+    private val jobAdapter = DataAdapter(R.layout.item_job) { view -> JobViewHolder(view) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

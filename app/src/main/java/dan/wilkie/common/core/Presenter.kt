@@ -27,7 +27,7 @@ abstract class Presenter<V : Presenter.View> {
 
     protected open fun onDetach(view: V) {}
 
-    protected fun untilDetach(disposable: Disposable) {
+    private fun untilDetach(disposable: Disposable) {
         this.compositeDisposable.add(disposable)
     }
 
